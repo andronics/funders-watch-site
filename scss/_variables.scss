@@ -1,0 +1,45 @@
+//  Table of Contents:
+//
+//   1. Global
+//   2. Grid breakpoints
+//   3. Base Typography
+//   4. Typography Helpers
+//   5. Abide
+//   6. Accordion
+//   7. Accordion Menu
+//   8. ... 
+// 1. Global
+// ---------dd
+
+
+/*!
+ * Primary color settings
+ */
+
+$blue-light: #40B4DC;
+$blue-dark: #0c202f;
+$red: #E80029;
+$black: #000;
+$white: #fff;
+$grey-x-light:#f1f1f1;
+$grey-light:#d2d2d2;
+$grey-medium:#8c8c8c;
+$grey-dark:#5a5a5a;
+$grey-form:#C8C8C8;
+
+
+$primary: #000066 !default;
+$secondary: #2384F5 !default;
+$danger: #fb344f !default;
+$info: #9B5921 !default;
+$warning: #fb344f !default;
+$success: #6a2405 !default;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger
+);

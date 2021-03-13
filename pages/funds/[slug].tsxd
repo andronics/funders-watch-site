@@ -1,0 +1,51 @@
+
+import { NextSeo } from 'next-seo';
+import Layout from '@components/layout'
+
+import { useRouter } from 'next/router'
+
+export type FundsPostProps = {
+    post: any[]
+}
+
+export default function FundsPost({ post }: FundsPostProps) {
+    
+    const router = useRouter()
+
+    return (
+        <>
+            
+            <NextSeo title={post[0].slug}/>
+            
+            <Layout preview={null}>
+
+            </Layout>
+
+        </>
+        
+    )
+
+}
+
+// export async function getStaticPaths() {
+//     const posts = await getFundsPosts()
+//     return {
+//         paths: posts.map(post => `/blog/${post.slug}`) || [],
+//         fallback: true
+//     }
+// }
+
+// export async function getStaticProps({ params, preview = null }) {
+//     const { posts, morePosts } = await getBlogPostsWithPagination()
+//     const content = posts[0]?.content || ''
+//     return {
+//         props: {
+//             preview,
+//             post: {d
+//                 ...posts[0],
+//                 content
+//             },
+//             morePosts
+//         }
+//     }
+// }

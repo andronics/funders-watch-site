@@ -1,0 +1,35 @@
+
+// custom mixins
+@import "variables";
+
+// bootstrap styles
+@import '~bootstrap/scss/bootstrap';
+
+// fonts
+@import "fonts";
+
+// vendor styles
+// @import "vendors/other"
+
+// custom mixins
+// @import "mixins/mixins";
+
+// component specific styles
+// @import "components/callout";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
